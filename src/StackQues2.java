@@ -3,7 +3,7 @@ import java.util.Stack;
 public class StackQues2 {
     // Questions 2 : Reverse the String using Stack !!
     public static void main(String[] args) {
-       String  str = "abc";
+       String  str = "HelloWorld";
        String result = reverseString(str);
        System.out.println(result);
     }
