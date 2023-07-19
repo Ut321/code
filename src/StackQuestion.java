@@ -1,12 +1,13 @@
 import java.util.*;
 public class StackQuestion {
-    public static void pushAtButtom(Stack<Integer> s, int data) {
+    // Push at bottom problem
+    public static void pushAtBottom(Stack<Integer> s, int data) {
         if (s.isEmpty()) {
-            s.push(data);
+            s.push(data); // data push ho gya at bottom
             return;
         }
         int top = s.pop();
-        pushAtButtom(s, data);
+        pushAtBottom(s, data);
         s.push(top);
     }
 
@@ -17,7 +18,7 @@ public class StackQuestion {
         s.push(3);
 
 
-        pushAtButtom(s, 4);
+        pushAtBottom(s, 4);
         while (!s.isEmpty()){
             System.out.println(s.pop());
         }

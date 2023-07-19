@@ -1,13 +1,13 @@
 import java.util.Stack;
 
 public class ReverseStack {
-    public static void pushAtButtom(Stack<Integer> s, int data) {
+    public static void pushAtBottom(Stack<Integer> s, int data) {
         if (s.isEmpty()) {
             s.push(data);
             return;
         }
         int top = s.pop();
-        pushAtButtom(s, data);
+        pushAtBottom(s, data);
         s.push(top);
     }
 
@@ -15,9 +15,9 @@ public class ReverseStack {
       if(s.isEmpty()){
        return;
    }
-        int top = s.pop();
-        reverseStack(s);
-        pushAtButtom(s,top);
+        int top = s.pop();  //upar ja rhe hai top ko nikal rahe hai.
+        reverseStack(s);    // next ko call kar rhe hai.
+        pushAtBottom(s,top); // niche atee aate  top ko bottom pe push kar rahe hai .
     }
     public static  void printStack(Stack<Integer>s){
         while (!s.isEmpty()){
@@ -41,3 +41,6 @@ public class ReverseStack {
 
     }
 }
+
+
+// Out put : 1 2 3 .
