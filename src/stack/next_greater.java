@@ -26,7 +26,7 @@ public class next_greater {
        }
        // print
        for(int i =0; i<nextGreater.length; i++){
-           System.out.println(nextGreater[i] + " ");
+           System.out.print(nextGreater[i] + " ");
 
        }
         System.out.println();
@@ -35,3 +35,4 @@ public class next_greater {
 
 
 // Output : 4 , 9 , 9, -1 , -1 .
+// TC : O(n)
