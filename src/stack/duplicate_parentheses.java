@@ -51,4 +51,6 @@ public class duplicate_parentheses {
 }
 
 
+//TC : O(N)
+
 
